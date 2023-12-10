@@ -20,11 +20,40 @@
                 <h1>Here goes description with title</h1>
                 <p>form is not working right now</p>
             </div>
-            <form action="" method="post">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name">
+            <form action="data" method="post">
+                <legend>Fill up this form</legend>
+                <fieldset>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="John">
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Wick">
+                </fieldset>
+
+                <fieldset>                    
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="mail" placeholder="johnwick@email.com">
+    
+                    <label for="phone">Phone Number:</label>
+                    <select name="area">
+                        <option value="11">+11</option>
+                        <option value="22">+22</option>
+                        <option value="33">+33</option>
+                    </select>
+                    <input type="number" id="phone" name="phone" placeholder="123-456-789">
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </fieldset>
+
             </form>
-            <div class="login"> if you have acc then login</div>
+            <button type="submit">Create Account</button>
+            <div class="login"> Already have an account? <a href="#">Log In</a></div>
         </div>
     </div>
     

@@ -12,6 +12,9 @@ body{
 }
 .form{
     flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .company-name{
     display: flex;
