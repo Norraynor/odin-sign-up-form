@@ -14,7 +14,7 @@ body{
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .company-name{
     display: flex;
@@ -33,4 +33,43 @@ body{
     padding-bottom: 8px;
     width: 40%;
     text-align: center;
+}
+
+.title,.form-container,.submit-container{
+    flex-basis: 33.3%;
+    box-sizing: border-box;
+    padding: 32px;
+}
+.title,.submit-container{
+    background-color: rgb(212, 212, 212);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.form-container>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+form>legend{
+    font-size: 24px;
+    font-weight: bold;
+}
+form>fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+form>fieldset>div{
+    width:40%;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]{
+    width:100%;
+}
+label{
+    font-weight: bold;
 }
