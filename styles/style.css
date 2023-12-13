@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    --global-padding: 24px;
 }
 .container{
     width: 100%;
@@ -15,6 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .company-name{
     display: flex;
@@ -38,15 +40,19 @@ body{
 .title,.form-container,.submit-container{
     flex-basis: 33.3%;
     box-sizing: border-box;
-    padding: 32px;
+    width:100%;
 }
 .title,.submit-container{
     background-color: rgb(212, 212, 212);
+    padding: var(--global-padding);
 }
 .title{
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+.form-container{
+    padding: 12px 0;
 }
 .form-container>form{
     display: flex;
@@ -57,19 +63,40 @@ body{
 form>legend{
     font-size: 24px;
     font-weight: bold;
+    padding: 16px var(--global-padding);
 }
 form>fieldset{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border: none;
+    padding-left: var(--global-padding);
+    padding-right: var(--global-padding);
 }
 form>fieldset>div{
     width:40%;
 }
 input[type=text],input[type=email],input[type=number],input[type=password]{
     width:100%;
+    font-size: 24px;
 }
 label{
+    font-weight: bold;
+}
+button{
+    background-color: rgb(39, 126, 5);
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px;
+}
+.login{
+    padding: 12px 0;
+}
+.login a{
+    color: rgb(39, 126, 5);
     font-weight: bold;
 }
