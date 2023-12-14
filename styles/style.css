@@ -100,3 +100,21 @@ button{
     color: rgb(39, 126, 5);
     font-weight: bold;
 }
+
+
+input{
+    border-radius: 5px;
+    border-color: black;
+    padding: 2px 4px;
+}
+input:focus-visible{
+    outline: none;
+}
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    border: 2px solid blue;
+    box-shadow: 3px 2px 2px 1px rgb(142, 142, 245);
+}
