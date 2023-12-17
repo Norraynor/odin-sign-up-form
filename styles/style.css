@@ -45,6 +45,8 @@ body{
 .title,.submit-container{
     background-color: rgb(212, 212, 212);
     padding: var(--global-padding);
+    padding-right: 36px;
+
 }
 .title{
     display: flex;
@@ -59,6 +61,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+    padding-right: 36px;
+
 }
 form>legend{
     font-size: 24px;
